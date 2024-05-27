@@ -10,5 +10,8 @@
         <action name="HelloStrutsAction" class="com.diworksdev.webproj.action.HelloStrutsAction" method="execute">
             <result name="success">hello.jsp</result>
         </action>
+        <action name="WelcomeAction" class="com.diworksdev.wedproj.action.WelcomeAction" method="execute">
+            <result name="success">welcome.jsp</result>
+        </action>
     </package>
 </struts>
