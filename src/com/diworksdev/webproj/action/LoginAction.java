@@ -14,7 +14,7 @@ public class LoginAction extends ActionSupport {
 		return username;
 	}
 
-	public void setUsernae(String username) {
+	public void setUsername(String username) {
 		this.username = username;
 	}
 
