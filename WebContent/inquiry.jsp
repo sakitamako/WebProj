@@ -9,16 +9,16 @@
     </head>
     <body>
         <s:form method="post" action="InquiryCompleteAction">
-            名前:<input type="text" name="name"/><br>
-            お問合せの種類:<br>
+            <br>名前:<br>
+            <input type="text" name="name"/>
+            <br>お問合せの種類:<br>
             <select name="qtype">
                 <option value="company">会社について</option>
                 <option value="product">製品について</option>
                 <option value="support">アフターサポートについて</option>
             </select>
-            お問合せ内容:
+            <br>お問合せ内容:<br>
             <s:textarea name="body"/>
-            <br>
             <s:submit value="登録"/>
         </s:form>
     </body>
