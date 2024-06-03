@@ -5,30 +5,77 @@
 "http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
+
+    <!-- このプロジェクトで使うActionファイルが保存されているパッケージを宣言 -->
+    <!-- 1, Struts2の挙動を制御する設定、name:設定名、value:設定値、をそれぞれ記述！※この研修では毎回同じ値を使う -->
     <constant name="struts.devMode" value="true"/>
+
+    <!-- 2, Actionファイルが保存されているパッケージ名を記述 -->
     <package name="com.diworksdev.webproj.action" extends="struts-default">
 
+        <!-- 呼び出されるJavaクラスファイルと実行するメソッドを宣言 -->
+        <!-- 3, プロジェクト内で使うActionファイルを記述 -->
+        <!-- 4, パッケージ名、Actionクラス名の順で記述 ※③で呼び出されたActionクラスの場所を記述 -->
+        <!-- 5, 普通はexecuteメソッドを記述 ※③で呼び出されたActionクラスのどのメソッドが呼ばれるかを記述 -->
         <action name="HelloStrutsAction" class="com.diworksdev.webproj.action.HelloStrutsAction" method="execute">
+
+            <!-- execute()メソッドから返ってきた値によって、次に遷移するJSPを振り分け -->
+            <!-- 6, ⑤のメソッドからSUCCESSが返された場合、ここで記述したJSPファイルに遷移 -->
             <result name="success">hello.jsp</result>
         </action>
 
+        <!-- 呼び出されるJavaクラスファイルと実行するメソッドを宣言 -->
+        <!-- 3, プロジェクト内で使うActionファイルを記述 -->
+        <!-- 4, パッケージ名、Actionクラス名の順で記述 ※③で呼び出されたActionクラスの場所を記述 -->
+        <!-- 5, 普通はexecuteメソッドを記述 ※③で呼び出されたActionクラスのどのメソッドが呼ばれるかを記述 -->
         <action name="WelcomeAction" class="com.diworksdev.webproj.action.WelcomeAction" method="execute">
+
+            <!-- execute()メソッドから返ってきた値によって、次に遷移するJSPを振り分け -->
+            <!-- 6, ⑤のメソッドからSUCCESSが返された場合、ここで記述したJSPファイルに遷移 -->
             <result name="success">welcome.jsp</result>
         </action>
 
+        <!-- 呼び出されるJavaクラスファイルと実行するメソッドを宣言 -->
+        <!-- 3, プロジェクト内で使うActionファイルを記述 -->
+        <!-- 4, パッケージ名、Actionクラス名の順で記述 ※③で呼び出されたActionクラスの場所を記述 -->
+        <!-- 5, 普通はexecuteメソッドを記述 ※③で呼び出されたActionクラスのどのメソッドが呼ばれるかを記述 -->
         <action name="LoginAction" class="com.diworksdev.webproj.action.LoginAction" method="execute">
+
+            <!-- execute()メソッドから返ってきた値によって、次に遷移するJSPを振り分け -->
+            <!-- 6, ⑤のメソッドからSUCCESSが返された場合、ここで記述したJSPファイルに遷移 -->
             <result name="success">login.jsp</result>
         </action>
 
+        <!-- 呼び出されるJavaクラスファイルと実行するメソッドを宣言 -->
+        <!-- 3, プロジェクト内で使うActionファイルを記述 -->
+        <!-- 4, パッケージ名、Actionクラス名の順で記述 ※③で呼び出されたActionクラスの場所を記述 -->
+        <!-- 5, 普通はexecuteメソッドを記述 ※③で呼び出されたActionクラスのどのメソッドが呼ばれるかを記述 -->
         <action name="InquiryAction" class="com.diworksdev.webproj.action.InquiryAction" method="execute">
+
+            <!-- execute()メソッドから返ってきた値によって、次に遷移するJSPを振り分け -->
+            <!-- 6, ⑤のメソッドからSUCCESSが返された場合、ここで記述したJSPファイルに遷移 -->
             <result name="success">inquiry.jsp</result>
         </action>
 
+        <!-- 呼び出されるJavaクラスファイルと実行するメソッドを宣言 -->
+        <!-- 3, プロジェクト内で使うActionファイルを記述 -->
+        <!-- 4, パッケージ名、Actionクラス名の順で記述 ※③で呼び出されたActionクラスの場所を記述 -->
+        <!-- 5, 普通はexecuteメソッドを記述 ※③で呼び出されたActionクラスのどのメソッドが呼ばれるかを記述 -->
         <action name="InquiryCompleteAction" class="com.diworksdev.webproj.action.InquiryCompleteAction" method="execute">
+
+            <!-- execute()メソッドから返ってきた値によって、次に遷移するJSPを振り分け -->
+            <!-- 6, ⑤のメソッドからSUCCESSが返された場合、ここで記述したJSPファイルに遷移 -->
             <result name="success">inquiryComplete.jsp</result>
         </action>
 
+        <!-- 呼び出されるJavaクラスファイルと実行するメソッドを宣言 -->
+        <!-- 3, プロジェクト内で使うActionファイルを記述 -->
+        <!-- 4, パッケージ名、Actionクラス名の順で記述 ※③で呼び出されたActionクラスの場所を記述 -->
+        <!-- 5, 普通はexecuteメソッドを記述 ※③で呼び出されたActionクラスのどのメソッドが呼ばれるかを記述 -->
         <action name="TestAction" class="com.diworksdev.webproj.action.TestAction" method="execute">
+
+            <!-- execute()メソッドから返ってきた値によって、次に遷移するJSPを振り分け -->
+            <!-- 6, ⑤のメソッドからSUCCESSが返された場合、ここで記述したJSPファイルに遷移 -->
             <result name="success">test.jsp</result>
         </action>
     </package>
