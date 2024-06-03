@@ -13,6 +13,7 @@ public class HelloStrutsAction extends ActionSupport {
 	public String execute() {
 
 		//戻り値
+		//処理を終了し、呼び出し元に処理を戻す
 		return SUCCESS;
 	}
 
