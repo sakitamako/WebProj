@@ -10,10 +10,10 @@
         <title>INDEX</title>
     </head>
     <body>
-        <!-- actionはHelloStrutsAction.javaファイル -->
+        <!-- actionはstruts.xmlに記述した部分 -->
         <!-- submitはブラウザ上のHelloStrutsボタン -->
         <!-- ブラウザ上に表示されているHelloStrutsボタンを押すと、
-        HelloStrutsAction.javaファイルにアクションして、処理結果をhello.jspで表示するってこと？ -->
+        struts.xmにアクションして、処理結果をhello.jspで表示するってこと -->
         <s:form action="HelloStrutsAction">
             <s:submit value="HelloStruts"/>
         </s:form>
