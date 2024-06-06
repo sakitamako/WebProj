@@ -27,7 +27,7 @@
         </s:form>
 
         <br>
-        <!-- ブラウザ上の送信ボタンを押すとTestAction.javaファイルにアクションし、処理結果をTest.jspで表示する -->
+        <!-- ブラウザ上の送信ボタンを押すとstruts.xmlにアクションし、処理結果をTest.jspで表示する -->
         GET 通信
         <s:form method="get" action="TestAction">
             <s:textfield name="username"/>
