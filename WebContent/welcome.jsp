@@ -11,7 +11,7 @@
     </head>
     <body>
         <!-- index.jspファイルのブラウザ上のWelcomeボタンを押した先の入力項目が下記の内容、
-        名前とパスワードを入力して送信ボタンを押すとWelcomeAction.javaファイルにアクションし、処理結果をlogin.jspで表示する -->
+        strutsファイルにアクションし、処理結果をlogin.jspで表示する -->
         名前とパスワードを入力してください。
         <s:form method="post" action="LoginAction">
             <s:textfield name="username" label="ユーザー名"/>

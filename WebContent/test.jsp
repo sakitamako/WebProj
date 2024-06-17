@@ -10,7 +10,7 @@
         <title>TEST</title>
     </head>
     <body>
-        <!-- index.jspファイルのブラウザ上の送信ボタンを押すとTestAction.javaファイルにアクションし、処理結果をTest.jspで表示する -->
+        <!-- strutsファイルにアクションし、処理結果をTest.jspで表示する -->
         <br>
         <s:property value="username"/>
         <br>

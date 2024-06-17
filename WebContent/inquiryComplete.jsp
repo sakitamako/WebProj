@@ -11,7 +11,7 @@
     </head>
     <body>
         <!-- inquiry.jspで登録ボタンを押した先に表示されるファイル -->
-        <!-- InquiryCompleteAction.javaファイルにアクションし、入力した処理結果を登録ボタンを押した先のinquiryComplete.jspで表示する？ -->
+        <!-- strutsファイルにアクションし、処理結果をこのファイルで表示する -->
         <br>
         <s:property value="name"/>さん、お問合せありがとうございました。
         <br>

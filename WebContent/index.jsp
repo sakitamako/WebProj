@@ -11,9 +11,8 @@
     </head>
     <body>
         <!-- actionはstruts.xmlに記述した部分 -->
-        <!-- submitはブラウザ上のHelloStrutsボタン -->
-        <!-- ブラウザ上に表示されているHelloStrutsボタンを押すと、
-        struts.xmにアクションして、処理結果をhello.jspで表示するってこと -->
+        <!-- submitはブラウザ上のボタン -->
+        <!-- ブラウザ上に表示されているHelloStrutsボタンを押してstruts.xmlにアクション、処理結果をhello.jspで表示する -->
         <s:form action="HelloStrutsAction">
             <s:submit value="HelloStruts"/>
         </s:form>
